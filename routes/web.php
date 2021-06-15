@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\ClientController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,12 +15,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::middleware(['auth'])->group(function () {
+    Route::get('/', function () {
+        return redirect()->route('users.index');
+    });
+    Route::resource('usuarios', UserController::class)->names('users')->parameters(['usuarios' => 'user']);
+    Route::resource('clientes', ClientController::class)->names('clients')->parameters(['clientes' => 'client']);
+});
 
 require __DIR__.'/auth.php';
