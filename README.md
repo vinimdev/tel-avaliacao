@@ -63,4 +63,5 @@ iii) Caso deseje, personalize a interface e mostre que tem criatividade (+)
    b) O cadastro deverá obedecer às seguintes regras:  
    i) Caso o cliente seja de SP, o campo RG é obrigatório.  
    ii) Caso o cliente seja da BA, não deixar cadastrar uma pessoa com menos de 18 anos.
-   ##BOA SORTE
+   
+##BOA SORTE
