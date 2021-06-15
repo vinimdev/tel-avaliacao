@@ -1,15 +1,17 @@
-#Instruções para rodar a aplicação:
+# Instruções para rodar a aplicação:
 
-####1. Configurando SQL Server  
+#### 1. Configurando SQL Server  
 Caso o SQL Server, esteja em português, deve-se setar para inglês através do comando: exec sp_defaultlanguage 'sa', 'us_english'
 reconfigure ou através da interface SSMS.
 
-####2. Login na aplicação
+#### 2. Login na aplicação
 Para realizar o login na aplicação deve-se registrar ou dá entrada com os seguintes dados:  
 **E-mail:** admin@admin.com.br  
 **Senha:** usuariopadrao
 
-#TEL
+Ferramenta: Composer.
+
+# TEL
 
 #### Orientações iniciais:
 • O candidato deve criar uma conta no github (https://github.com);  
@@ -21,24 +23,24 @@ Atividade:
 O candidato deve desenvolver e entregar o projeto no prazo estipulado pelo RH. Essa etapa é eliminatória. O
 candidato será convidado a falar sobre o projeto desenvolvido a uma bancada de avaliação.  
 
-####a) As Ferramentas que podem ser utilizadas no backend:  
+#### a) As Ferramentas que podem ser utilizadas no backend:  
 i) PHP;  
 ii) Laravel\Lumen;  
 
-####b) Ferramentas que podem ser utilizadas no frontend:
+#### b) Ferramentas que podem ser utilizadas no frontend:
 
 i) Bootstrap;  
 ii) Outras;  
 
-####c) O candidato deve manter a atenção para em utilizar as melhores práticas:  
+#### c) O candidato deve manter a atenção para em utilizar as melhores práticas:  
 i) Clean Code;  
 ii) PHP OO;  
 
-####d) Testes:  
+#### d) Testes:  
 
 i) Os Testes não são obrigatórios, e serão considerados como plus (+) na avaliação.  
 
-####e) Build e Execução:  
+#### e) Build e Execução:  
 
 i) Envie as instruções para execução e não esqueça do Script SQL de criação e carga do banco (SQL ANSI ou
 SQL que rode em SQL Sever). Cuidado com dependências externas não mapeadas que inviabilizem ou
@@ -77,4 +79,4 @@ iii) Caso deseje, personalize a interface e mostre que tem criatividade (+)
    i) Caso o cliente seja de SP, o campo RG é obrigatório.  
    ii) Caso o cliente seja da BA, não deixar cadastrar uma pessoa com menos de 18 anos.
    
-##BOA SORTE
+## BOA SORTE
