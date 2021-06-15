@@ -27,15 +27,11 @@ class CreateClientsTable extends Migration
 
             $table->foreign('user_register_id')
                 ->references('id')
-                ->on('users')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
+                ->on('users');
 
             $table->foreign('user_update_id')
                 ->references('id')
-                ->on('users')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
+                ->on('users');
         });
     }
 
