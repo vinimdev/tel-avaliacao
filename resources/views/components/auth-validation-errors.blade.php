@@ -2,14 +2,12 @@
 
 @if ($errors->any())
     <div {{ $attributes }}>
-        <div class="font-medium text-red-600">
-            {{ __('Whoops! Something went wrong.') }}
+        <div class="invalid-feedback d-block">
+            <ul class="mt-2 mb-0">
+                @foreach ($errors->all() as $error)
+                    <strong><li>{{ $error }}</li></strong>
+                @endforeach
+            </ul>
         </div>
-
-        <ul class="mt-3 list-disc list-inside text-sm text-red-600">
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
     </div>
 @endif
