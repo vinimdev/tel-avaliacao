@@ -104,7 +104,11 @@ class UserController extends Controller
 
             $request->session()->flash('success', 'Registro atualizado com sucesso');
         } catch (\Exception $e) {
-            $request->session()->flash('error', 'Ocorreu um erro ao tentar atualizar esses dados');
+            if(env('APP_DEBUG')){
+                $request->session()->flash('error', $e->getMessage());
+            } else {
+                $request->session()->flash('error', 'Ocorreu um erro ao tentar atualizar esses dados!');
+            }
         }
         return redirect()->back();
     }
@@ -122,7 +126,11 @@ class UserController extends Controller
 
             $request->session()->flash('success', 'Registro excluído com sucesso!');
         } catch (\Exception $e) {
-            $request->session()->flash('error', 'Ocorreu um erro ao tentar excluir esses dados');
+            if(env('APP_DEBUG')){
+                $request->session()->flash('error', $e->getMessage());
+            } else {
+                $request->session()->flash('error', 'Ocorreu um erro ao tentar excluir esses dados!');
+            }
         }
 
         return redirect()->back();
