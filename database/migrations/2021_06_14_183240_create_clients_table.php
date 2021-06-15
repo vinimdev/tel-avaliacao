@@ -15,8 +15,8 @@ class CreateClientsTable extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('user_register');
-            $table->unsignedBigInteger('user_update')->nullable();
+            $table->unsignedBigInteger('user_register_id');
+            $table->unsignedBigInteger('user_update_id')->nullable();
             $table->string('name');
             $table->string('cpf', 14)->unique();
             $table->string('rg', 20)->nullable();
@@ -25,13 +25,13 @@ class CreateClientsTable extends Migration
             $table->string('state', 2);
             $table->timestamps();
 
-            $table->foreign('user_register')
+            $table->foreign('user_register_id')
                 ->references('id')
                 ->on('users')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
 
-            $table->foreign('user_update')
+            $table->foreign('user_update_id')
                 ->references('id')
                 ->on('users')
                 ->onDelete('cascade')
