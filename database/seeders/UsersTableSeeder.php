@@ -31,6 +31,15 @@ class UsersTableSeeder extends Seeder
             'remember_token' => Str::random(10)
         ];
 
+        $userPadrao = [
+            'name' => 'Usuario Padrão',
+            'email' => 'admin@admin.com.br',
+            'email_verified_at' => now(),
+            'password' => Hash::make('usuariopadrao'),
+            'remember_token' => Str::random(10)
+        ];
+
         User::create($vinicius);
+        User::create($userPadrao);
     }
 }
