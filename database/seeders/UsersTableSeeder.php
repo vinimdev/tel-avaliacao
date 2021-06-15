@@ -31,7 +31,7 @@ class UsersTableSeeder extends Seeder
             'remember_token' => Str::random(10)
         ];
 
-        $userPadrao = [
+        $userDefault = [
             'name' => 'Usuario Padrão',
             'email' => 'admin@admin.com.br',
             'email_verified_at' => now(),
@@ -40,6 +40,6 @@ class UsersTableSeeder extends Seeder
         ];
 
         User::create($vinicius);
-        User::create($userPadrao);
+        User::create($userDefault);
     }
 }
