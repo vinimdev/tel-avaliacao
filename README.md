@@ -1,62 +1,66 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+#### Orientações iniciais:
+• O candidato deve criar uma conta no github (https://github.com);  
+• O candidato deve criar um novo repositório público;  
+• O candidato deve construir o seu projeto neste repositório. 
+Ao finalizar este deve enviar às orientações de execução para o e-mail asilva@tel.inf.br.  
+Atividade:  
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+O candidato deve desenvolver e entregar o projeto no prazo estipulado pelo RH. Essa etapa é eliminatória. O
+candidato será convidado a falar sobre o projeto desenvolvido a uma bancada de avaliação.  
 
-## About Laravel
+####a) As Ferramentas que podem ser utilizadas no backend:  
+i) PHP;  
+ii) Laravel\Lumen;  
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+####b) Ferramentas que podem ser utilizadas no frontend:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+i) Bootstrap;  
+ii) Outras;  
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+####c) O candidato deve manter a atenção para em utilizar as melhores práticas:  
+i) Clean Code;  
+ii) PHP OO;  
 
-## Learning Laravel
+####d) Testes:  
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+i) Os Testes não são obrigatórios, e serão considerados como plus (+) na avaliação.  
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+####e) Build e Execução:  
 
-## Laravel Sponsors
+i) Envie as instruções para execução e não esqueça do Script SQL de criação e carga do banco (SQL ANSI ou
+SQL que rode em SQL Sever). Cuidado com dependências externas não mapeadas que inviabilizem ou
+dificultem essas atividades.  
+ii) De preferência, utilize uma ferramenta como composer, npm ou yarn para realizar as tarefas necessárias de
+build ou instalação de pacotes.  
+iii) Caso deseje, personalize a interface e mostre que tem criatividade (+)
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Descrição do Projeto
+#### 1) Ativar serviço de autenticação.
+   a) Middleware, login e Soft Delete.
+##### 2) Criar Tela de Cadastro de usuário:
+   a) O cadastro deverá conter os seguintes campos:  
+   i) Nome;  
+   ii) E-mail;  
+   iii) Senha.  
+   b) O cadastro e login deverá obedecer às seguintes regras: i. E-mail deve ser único;  
+   i) Senha não pode ser nula;  
+   ii) Na edição a senha não é obrigatória;  
+   iii) Na edição quando não informar a senha a mesma não deve ser atualizada;  
+   iv) Não haverá exclusão física, apenas exclusão lógica;  
+   v) Usuários excluídos logicamente não podem se logar;  
+#### 3) Criar um cadastro de clientes que irá rodar clientes de (SP e BA).
+   a) O cadastro deverá conter os seguintes campos:  
+   i) Nome  
+   ii) CPF  
+   iii) RG  
+   iv) Data/hora de cadastro  
+   v) Data/hora da última atualização  
+   vi) Usuário que efetuou o cadastro  
+   vii) Usuário que efetuou a última atualização  
+   viii) Data de nascimento  
+   ix) Telefones. O número de telefones é variável.  
+   x) Local de nascimento do cliente (BA, SP)  
+   b) O cadastro deverá obedecer às seguintes regras:  
+   i) Caso o cliente seja de SP, o campo RG é obrigatório.  
+   ii) Caso o cliente seja da BA, não deixar cadastrar uma pessoa com menos de 18 anos.
+   ##BOA SORTE
