@@ -4,9 +4,9 @@
         <input id="name" type="text" class="form-control" name="name" value="{{ $client->name ?? '' }}" ="" autocomplete="name" autofocus="">
     </div>
     <div class="form-group mb-3 col-md-6">
-        <label for="state" class="col-form-label">Estado</label>
+        <label for="state" class="col-form-label">Estado de nascimento</label>
         <select class="form-select" name="state" id="state">
-            <option value="">Estado</option>
+            <option value="">Selecione</option>
             @foreach($listState as $key => $states)
                 <option {{ isset($client) && $client->state === $states ? 'selected' : '' }} value="{{ $states }}">{{ $key }}</option>
             @endforeach
