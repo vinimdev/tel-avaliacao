@@ -1,3 +1,16 @@
+#Instruções para rodar a aplicação:
+
+####1. Configurando SQL Server  
+Caso o SQL Server, esteja em português, deve-se setar para inglês através do comando: exec sp_defaultlanguage 'sa', 'us_english'
+reconfigure ou através da interface SSMS.
+
+####2. Login na aplicação
+Para realizar o login na aplicação deve-se registrar ou dá entrada com os seguintes dados:  
+**E-mail:** admin@admin.com.br  
+**Senha:** usuariopadrao
+
+#TEL
+
 #### Orientações iniciais:
 • O candidato deve criar uma conta no github (https://github.com);  
 • O candidato deve criar um novo repositório público;  
